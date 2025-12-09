@@ -5,8 +5,8 @@ With Laravel, MySQL & Mazer Admin Template
 ## 🚀 Cara Menjalankan di localhost
 
 ```bash
-git https://github.com/aratech-cloud/point-of-sales.git
-cd point-of-sales
+git clone https://github.com/aratech-cloud/HR-APP.git
+cd HR-APP
 cp .env.example .env
 composer install && npm install
 php artisan key:generate
@@ -44,8 +44,7 @@ php artisan key:generate
 ### 5. Jalankan Migration dan Seeder
 
 ```bash
-php artisan migrate
-php artisan db:seed
+php artisan migrate --seed
 ```
 
 ### 6. Install Node js
@@ -61,6 +60,5 @@ node -v
 ### 7. Install packages dan build
 
 ```bash
-npm install
-npm run build
+npm install && npm run build
 ```
